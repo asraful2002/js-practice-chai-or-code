@@ -1,27 +1,35 @@
-console.log(undefined == 0);
+// let name = "asraful islam";
+// let anotherName = name;
+// anotherName = "jakariya"
 
-const id = symbol('123')
-const anotherId = symbol('123')
-console.log(id == anotherId);
+// console.log(name);
+// console.log(anotherName);
 
-const bigNumber = 244248548n
+// let userOne = {
+//   email:"user@google.com"
+// }
 
-const heros =["asraful","islam","jakariya"]{
-  name: "ayan",
-  age: 2,
-}
-const myFuncion = function(){
-  console.log(("hellow world"));
+
+// function addTowNumbers(number1,number2){
+//   console.log(number1+number2);
   
+// }
+
+function addTowNumbers(number1,number2){
+let result = number1+number2;
+  console.log("asraful")
+  return number1+number2
 }
+const result=addTowNumbers(3,5)
+console.log(result)
 
-let name = "asraful islam";
-let anotherName = name;
-anotherName = "jakariya"
 
-console.log(name);
-console.log(anotherName);
 
-let userOne = {
-  email:"user@google.com"
+function loginUserMessage(username = "jakariya"){
+  if(!username){
+    console.log("pls enter the user name")
+    return
+  }
+  return `${username} just logged in`
 }
+console.log(loginUserMessage("asraful"))
